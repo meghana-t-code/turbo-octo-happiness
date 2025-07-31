@@ -1,0 +1,189 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyN+w3b7LiYxp45RGSp3zAeS",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/meghana-t-code/turbo-octo-happiness/blob/main/gross%20pay%20calculator\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 462
+        },
+        "id": "mJ_QPmWEH-Hx",
+        "outputId": "5545acc8-beff-450a-99d1-6e16406ffc34"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "What is your company name? google\n",
+            "how many hours did you work? seventy\n",
+            "what is the rate of your salary? four\n",
+            "error, please enter numeric inputs thank you!\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-3436421585.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;32mwhile\u001b[0m \u001b[0;32mTrue\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m       \u001b[0mcompany_name\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'What is your company name? '\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mstrip\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      5\u001b[0m       \u001b[0mhrs\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'how many hours did you work? '\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      6\u001b[0m       \u001b[0mrte\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m'what is the rate of your salary? '\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.11/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ],
+      "source": [
+        "# my name is meghana thirumala and this is my paycheck calculator for employees at a company.\n",
+        "# It gives 1.5 times the hourly rate for hours worked above 40 hours,\n",
+        "# handles non-numeric input gracefully,\n",
+        "# validates the inputs and keep asking the user to enter valid inputs for the hours and the rate value,\n",
+        "# and provides the employee with a reciept of a description of their pay!\n",
+        "\n",
+        "import random\n",
+        "\n",
+        "while True:\n",
+        "      company_name = input('What is your company name? ').strip()\n",
+        "      hrs = input('how many hours did you work? ')\n",
+        "      rte = input('what is the rate of your salary? ')\n",
+        "\n",
+        "      try:\n",
+        "        HOURS = float(hrs)\n",
+        "        RATE = float(rte)\n",
+        "\n",
+        "        if HOURS < 0 or RATE < 0:\n",
+        "          print('error: hours worked and rate cannot be negative. please enter positive numbers or zero, thank you!')\n",
+        "          continue\n",
+        "\n",
+        "        if HOURS > 40:\n",
+        "          overtime_pay = (HOURS - 40) * (RATE * 1.5)\n",
+        "          gross_pay = (40 * RATE) + (overtime_pay)\n",
+        "          document_number = random.randint(1000, 2000)\n",
+        "          print('\\n ---------Summary!-----------')\n",
+        "          print('company name:', company_name)\n",
+        "          print('hours worked:', round(HOURS, 2))\n",
+        "          print('rate of pay:', round(RATE,2))\n",
+        "          print('-----------------------------')\n",
+        "          print('document number:', document_number)\n",
+        "          print('Your',company_name,'gross pay is:', gross_pay )\n",
+        "          break\n",
+        "\n",
+        "\n",
+        "        if HOURS <= 40:\n",
+        "          gross_pay = HOURS * RATE\n",
+        "          document_number = random.randint(1000, 2000)\n",
+        "          print('\\n ---------Summary!-----------')\n",
+        "          print('company name:', company_name)\n",
+        "          print('hours worked:', round(HOURS, 2))\n",
+        "          print('rate of pay:', round(RATE,2))\n",
+        "          print('-----------------------------')\n",
+        "          print('document number:', document_number)\n",
+        "          print('Your',company_name,'gross pay is:', gross_pay )\n",
+        "          break\n",
+        "\n",
+        "      except:\n",
+        "        print('error, please enter numeric inputs thank you!')\n",
+        "\n",
+        "\n",
+        "#RESULTS:\n",
+        "\n",
+        "#ex 1:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? 45\n",
+        "#what is the rate of your salary? 10\n",
+        "\n",
+        "#---------Summary!-----------\n",
+        "#company name: google\n",
+        "#hours worked: 45.0\n",
+        "#rate of pay: 10.0\n",
+        "#-----------------------------\n",
+        "#document number: 1574\n",
+        "#Your google gross pay is: 475.0\n",
+        "\n",
+        "#ex #2\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? 40\n",
+        "#what is the rate of your salary? 10\n",
+        "\n",
+        "#---------Summary!-----------\n",
+        "#company name: google\n",
+        "#hours worked: 40.0\n",
+        "#rate of pay: 10.0\n",
+        "#-----------------------------\n",
+        "#document number: 1756\n",
+        "#1Your google gross pay is: 400.0\n",
+        "\n",
+        "#ex #3:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? 400000\n",
+        "#what is the rate of your salary? 50\n",
+        "\n",
+        "#---------Summary!-----------\n",
+        "#company name: google\n",
+        "#hours worked: 400000.0\n",
+        "#rate of pay: 50.0\n",
+        "#-----------------------------\n",
+        "#document number: 1354\n",
+        "#Your google gross pay is: 29999000.0\n",
+        "\n",
+        "# ex #4:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? -2\n",
+        "#what is the rate of your salary? 3\n",
+        "#error: hours worked and rate cannot be negative. please enter positive numbers or zero, thank you!\n",
+        "#What is your company name?\n",
+        "\n",
+        "# ex #5:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? 2\n",
+        "#what is the rate of your salary? -3\n",
+        "#error: hours worked and rate cannot be negative. please enter positive numbers or zero, thank you!\n",
+        "#What is your company name?\n",
+        "\n",
+        "#ex #6:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? -2\n",
+        "#what is the rate of your salary? -3\n",
+        "#error: hours worked and rate cannot be negative. please enter positive numbers or zero, thank you!\n",
+        "#What is your company name?\n",
+        "\n",
+        "#ex #7:\n",
+        "#What is your company name? google\n",
+        "#how many hours did you work? seventy\n",
+        "#what is the rate of your salary? four\n",
+        "#error, please enter numeric inputs thank you!\n",
+        "#What is your company name?\n",
+        "\n"
+      ]
+    }
+  ]
+}
